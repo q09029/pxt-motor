@@ -1,20 +1,20 @@
 enum MOTOR_DIR {
-    //% block=FRONT
+    //% block=正転
     FRONT = 0,
-    //% block=REVERCE
+    //% block=逆転
     REVERCE,
 }
 enum MOTOR_CH {
-    //% block=MOTOR1
+    //% block=モーター１
     MOTOR1 = 0,
-    //% block=MOTOR2
+    //% block=モーター２
     MOTOR2,
 }
 
 enum MOTORS {
-    //% block=RIGHTMOTOR
+    //% block=右モーター
     RIGHTMOTOR = 0,
-    //% block=LEFTMOTOR
+    //% block=左モーター
     LEFTMOTOR,
 }
 
@@ -62,3 +62,4 @@ namespace MOTOR {
         motor_dir[motorno] = dir
     }
 }
+ 
