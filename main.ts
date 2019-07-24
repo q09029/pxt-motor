@@ -25,7 +25,7 @@ let motor_dir = [MOTOR_DIR.FRONT, MOTOR_DIR.FRONT]
  */
 "//% weight=100 color=#0000ff icon="
 namespace MOTOR {
-    //% block="モーターを回す %motorno %dir %speed_6it"
+    //% block="モーターを回す %motorno %dir |speed %speed_6it"
     export function driveMotor(motorno: MOTORS, dir: MOTOR_DIR, speed_6it: number) {
         let speed = 0
         let data = 0
