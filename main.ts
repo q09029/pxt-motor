@@ -26,7 +26,6 @@ let motor_dir = [MOTOR_DIR.FRONT, MOTOR_DIR.FRONT]
 "//% weight=100 color=#0000ff icon="
 namespace MOTOR {
     //% block="モーターを回す %motorno %dir 速度 %speed_6it"
-    
     //%speed_6it.min=0 speed_6it.max=63
     export function driveMotor(motorno: MOTORS, dir: MOTOR_DIR, speed_6it: number) {
         let speed = 0
@@ -51,5 +50,15 @@ namespace MOTOR {
             NumberFormat.UInt8LE,
             false
         )
+    }
+
+    //% block="モーター番号を設定する %motorno モーター番号 %motorch"
+    export function setMotorNo(motorno: MOTORS, motorch: MOTOR_CH) {
+        motor[motorno] = motorch
+    }
+
+    //% block="モーターの方向設定する %motorno %motorch"
+    export function setMotorDir(motorno: MOTORS, dir: MOTOR_DIR) {
+        motor_dir[motorno] = dir
     }
 }
